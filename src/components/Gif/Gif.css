@@ -1,0 +1,11 @@
+.Gif {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.Gif img {
+  width: 100%;
+  object-fit: contain;
+
+}
