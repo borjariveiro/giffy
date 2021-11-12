@@ -8,7 +8,7 @@ import logo from './giffy_logo.png'
 import StaticContext from './context/StaticContext'
 import { GifsContextProvider } from './context/GifsContext'
 
-//!
+//! Seo con React min 50:30
 
 export default function App() {
   return (
@@ -25,6 +25,7 @@ export default function App() {
             <Route path="/" component={Home} />
             <Route path="/search/:keyword" component={SearchResult} />
             <Route path="/gif/:id" component={Detail} />
+            <Route path="/404" component={() => <h1>404 Error</h1>} />
           </GifsContextProvider>
         </section>
       </div>
