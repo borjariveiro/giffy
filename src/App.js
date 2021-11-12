@@ -12,10 +12,7 @@ import { GifsContextProvider } from './context/GifsContext'
 
 export default function App() {
   return (
-    <StaticContext.Provider value={{
-      name: 'Borja',
-      sub: true
-    }}>
+    <StaticContext.Provider>
       <div className="App">
         <section className="App-content">
           <Link to="/">
