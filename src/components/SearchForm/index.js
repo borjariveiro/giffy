@@ -1,5 +1,5 @@
 import React from "react";
-import useLocation from "wouter/use-location";
+import useLocation from "wouter";
 import useForm from "./hook";
 
 const RATNIGS = ['g', 'pg', 'pg-13', 'r']
