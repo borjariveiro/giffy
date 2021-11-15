@@ -1,24 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import useLocation from "wouter/use-location";
+import useForm from "./hook";
 
 const RATNIGS = ['g', 'pg', 'pg-13', 'r']
 
 function SearchForm({ initialKeyword = '', initialRating = 'g' }) {
-  const [keyword, setkeyword] = useState(decodeURIComponent(initialKeyword))
-  const [rating, setRating] = useState('g')
   const [path, pushLocation] = useLocation()
+
+
+  const { keyword, rating, times, updateKeyword, updateRating } = useForm({ initialKeyword, initialRating })
+
+  const handleChange = evt => {
+    updateKeyword(evt.target.value)
+  }
 
   const handleSubmit = evt => {
     evt.preventDefault()
     pushLocation(`/search/${keyword}/${rating}`)
   }
 
-  const handleChange = evt => {
-    setkeyword(evt.target.value)
-  }
-
   const handleChangeRating = evt => {
-    setRating(evt.target.value)
+    updateRating(evt.target.value)
   }
 
   return (
@@ -28,7 +30,9 @@ function SearchForm({ initialKeyword = '', initialRating = 'g' }) {
       <select value={rating} onChange={handleChangeRating}>
         {RATNIGS.map(rating => <option key={rating}>{rating}</option>)}
       </select>
+      <span>{times}</span>
     </form>
+
   )
 }
 
