@@ -4,7 +4,7 @@ import useUser from "hooks/useUser";
 import './Login.css'
 
 
-export default function Login() {
+export default function Login({ onLogin }) {
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -12,7 +12,10 @@ export default function Login() {
   const { isLoginLoading, hasLoginError, login, isLogged } = useUser()
 
   useEffect(() => {
-    if (isLogged) navigate('/')
+    if (isLogged) {
+      navigate('/')
+      onLogin && onLogin()
+    }
   }, [isLogged, navigate])
 
   const handleSubmit = (e) => {
