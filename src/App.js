@@ -14,7 +14,7 @@ import { GifsContextProvider } from 'context/GifsContext'
 import 'App.css'
 import logo from 'giffy_logo.png'
 
-//! useReducer 21:19
+//! Login 52:40
 
 export default function App() {
   return (
