@@ -4,3 +4,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.btn[disabled] {
+  opacity: .3;
+  pointer-events: none;
+}
