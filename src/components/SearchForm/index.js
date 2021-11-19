@@ -25,12 +25,11 @@ function SearchForm({ initialKeyword = '', initialRating = 'g' }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <button>Buscar</button>
+      <button className="btn">Buscar</button>
       <input placeholder="Search a gif here..." onChange={handleChange} type="text" value={keyword} />
       <select value={rating} onChange={handleChangeRating}>
         {RATNIGS.map(rating => <option key={rating}>{rating}</option>)}
       </select>
-      <span>{times}</span>
     </form>
 
   )
