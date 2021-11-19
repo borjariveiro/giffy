@@ -18,7 +18,6 @@ test('should use initial values', () => {
     initialKeyword: 'matrix'
   })
 
-
   expect(result.current.keyword).toBe('matrix')
 })
 

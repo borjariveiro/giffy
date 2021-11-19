@@ -15,16 +15,14 @@ export default function ErrorPage() {
       <Helmet>
         <title>Error 404 | Giffy</title>
       </Helmet>
-      <header className="o-header">
+      <div className="App-searchFormContainer">
         <SearchForm />
-      </header>
-      <div className="App-wrapper">
-        <div className="App-main page-error">
-          <span class="code-error">404</span>
-          <span class="msg-error">Sometimes gettings lost isn't that bad</span>
-          <img class="gif-error" src={randomImage()} alt="alt-page-404" />
-          <Link href='/' class="btn">Go to home</Link>
-        </div>
+      </div>
+      <div className="Error-main">
+        <span class="Error-code">404</span>
+        <span class="Error-msg">Sometimes gettings lost isn't that bad</span>
+        <img class="Error-gif" src={randomImage()} alt="alt-page-404" />
+        <Link href='/' class="button">Go to home</Link>
       </div>
     </>
   );

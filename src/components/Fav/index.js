@@ -40,7 +40,7 @@ export default function Fav({ id }) {
 
   return (
     <>
-      <button className='gf-fav' onClick={handleClick}>
+      <button className='Fav-button' onClick={handleClick}>
         <span aria-label={label} role='img'>
           {emoji}
         </span>

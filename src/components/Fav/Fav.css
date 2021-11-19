@@ -1,4 +1,4 @@
-.gf-fav {
+.Fav-button {
   background: rgba(255, 172, 172, .3);
   border: 0;
   border-radius: 100px;
@@ -8,11 +8,11 @@
   transition: all .3s ease;
 }
 
-.gf-fav:hover {
+.Fav-button:hover {
   background: rgba(255, 172, 172, .8);
 }
 
-.gf-fav span {
+.Fav-button span {
   display: block;
   width: 15px;
 }

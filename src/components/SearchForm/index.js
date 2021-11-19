@@ -1,14 +1,11 @@
 import React from "react";
 import { useLocation } from "wouter";
 import useForm from "./hook";
+import './SearchForm.css'
 
-const RATNIGS = ['g', 'pg', 'pg-13', 'r']
-
-function SearchForm({ initialKeyword = '', initialRating = 'g' }) {
-  const [path, pushLocation] = useLocation()
-
-
-  const { keyword, rating, times, updateKeyword, updateRating } = useForm({ initialKeyword, initialRating })
+function SearchForm({ initialKeyword = '' }) {
+  const [, pushLocation] = useLocation()
+  const { keyword, updateKeyword } = useForm({ initialKeyword })
 
   const handleChange = evt => {
     updateKeyword(evt.target.value)
@@ -16,20 +13,19 @@ function SearchForm({ initialKeyword = '', initialRating = 'g' }) {
 
   const handleSubmit = evt => {
     evt.preventDefault()
-    pushLocation(`/search/${keyword}/${rating}`)
-  }
-
-  const handleChangeRating = evt => {
-    updateRating(evt.target.value)
+    pushLocation(`/search/${keyword}`)
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <button className="btn">Buscar</button>
-      <input placeholder="Search a gif here..." onChange={handleChange} type="text" value={keyword} />
-      <select value={rating} onChange={handleChangeRating}>
-        {RATNIGS.map(rating => <option key={rating}>{rating}</option>)}
-      </select>
+    <form onSubmit={handleSubmit} className="SearchForm-form">
+      <input
+        className="SearchForm-input"
+        onChange={handleChange}
+        placeholder="Search a gif here..."
+        type="text"
+        value={keyword}
+      />
+      <button className="button">Buscar</button>
     </form>
 
   )

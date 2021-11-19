@@ -5,7 +5,7 @@ import GifsContext from '../context/GifsContext'
 const INITIAL_PAGE = 0
 
 
-export function useGifs({ keyword, rating } = { keyword: null }) {
+export function useGifs({ keyword, rating } = { keyword: '' }) {
   const [loading, setLoading] = useState(false)
   const [loadingNextPage, setLoadingNextPage] = useState(false)
   const [page, setPage] = useState(INITIAL_PAGE)
@@ -16,7 +16,6 @@ export function useGifs({ keyword, rating } = { keyword: null }) {
 
   useEffect(function () {
     setLoading(true)
-
 
     getGifs({ keyword: keywordToUse, rating })
       .then(gifs => {

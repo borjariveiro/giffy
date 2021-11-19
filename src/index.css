@@ -1,17 +1,35 @@
 :root {
+
+  /* Delete at end */
   --fz: 16px;
   --theme--contrast-0: #121212;
   --theme-body-bg: #18061f;
   --theme-body-txt: #f3f3f3;
-  --search-size-mx-h: 3rem;
-  --zIndex-header: 20;
-  --zIndex-component: 5;
+
+
   --brand-color_1: #00ff99;
   --brand-color_2: #00ccff;
   --brand-color_3: #9933ff;
   --brand-color_4: #9933ff;
   --brand-color_5: #fff35c;
   --brand-color_6: #8429de;
+
+  /* My styles */
+
+  --theme-background: #16161a;
+  --theme-title: #fffffe;
+  --theme-paragraph: #94a1b2;
+  --theme-button: #7f5af0;
+  --theme-button--text: #fffffe;
+  --theme-hover: #9933ff;
+
+  --fontSize: 16px;
+  --app-maxWith: 80rem;
+
+  --zIndex-component: 10;
+  --zIndex-header:    100;
+  --zIndex-modal:     1000;
+
 }
 
 html {
@@ -28,22 +46,12 @@ html {
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: var(--fz);
-  background-color: var(--theme-body-bg);
-  color: var(--theme-body-txt);
+  font-size: var(--fontSize);
+  background-color: var(--theme-background);
+  color: var(--theme-title);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 a {
-  color: #09f;
-  font-size: 32px;
   text-decoration: none;
 }
 
@@ -51,14 +59,4 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-
-/* -------------------- rf-layout  - Component / header */
-.o-header {
-  background-color: inherit;
-  position: sticky;
-  top: 0;
-  z-index: var(--zIndex-header);
-  max-height: var(--search-size-mx-h);
 }

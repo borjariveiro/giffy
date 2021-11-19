@@ -16,20 +16,19 @@ export default function Login({ onLogin }) {
       navigate('/')
       onLogin && onLogin()
     }
-  }, [isLogged, navigate])
+  }, [isLogged, navigate, onLogin])
 
   const handleSubmit = (e) => {
     e.preventDefault()
     login({ username, password })
-    // navigate('/')
+    navigate('/')
   }
 
   return (
     <>
-
       {isLoginLoading && <strong>Checking credentials ...</strong>}
       {!isLoginLoading &&
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="Form-login-register" onSubmit={handleSubmit}>
           <label>
             Username
             <input
@@ -48,7 +47,7 @@ export default function Login({ onLogin }) {
             />
           </label>
 
-          <button className="btn">Login</button>
+          <button className="button">Login</button>
         </form>
       }
       {

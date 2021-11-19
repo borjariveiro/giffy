@@ -1,9 +1,9 @@
-.form {
+.Form-login-register {
   width: 100%;
   max-width: 320px;
 }
 
-.form label {
+.Form-login-register label {
   display: block;
   margin-bottom: 4px;
 }
@@ -15,7 +15,7 @@
   display: block;
 }
 
-.form input {
+.Form-login-register input {
   background: #fff;
   border: none;
   width: 100%;
@@ -27,10 +27,10 @@
   margin-bottom: 16px;
 }
 
-.form input.error {
+.Form-login-register input.error {
   border: 1px solid red;
 }
 
-.form .btn {
+.Form-login-register button {
   width: 100%;
 }

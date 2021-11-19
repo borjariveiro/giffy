@@ -13,9 +13,9 @@ export default function Home() {
       <Helmet>
         <title>Home | Giffy</title>
       </Helmet>
-      <header className="o-header">
+      <div className="App-searchFormContainer">
         <SearchForm />
-      </header>
+      </div>
       <div className="App-wrapper">
         <div className="App-main">
           <div className="App-results">

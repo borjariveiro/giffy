@@ -50,7 +50,7 @@ export default function Register() {
             />
             <ErrorMessage className="form-error" name='password' component='small' />
 
-            <button type="submit" className="btn" disabled={isSubmitting}>Register</button>
+            <button type="submit" className="button" disabled={isSubmitting}>Register</button>
           </Form>
       }
     </Formik>

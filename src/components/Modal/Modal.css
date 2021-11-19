@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: var(--zIndex-modal);
 }
 
 .modal-content {
@@ -19,7 +19,7 @@
   border-radius: 10px;
 }
 
-.modal-content .btn{
+.modal-content button{
   display: block;
   margin-bottom: 32px;
 }

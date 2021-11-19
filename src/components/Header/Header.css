@@ -1,0 +1,24 @@
+.Header{
+  display: flex;
+  justify-content: center;
+}
+
+.Header-content{
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+  width: 100%;
+  max-width: var(--app-maxWith);
+}
+
+.Header a {
+  color: var(--theme-title);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 20px;
+
+}
+
+.Header a:hover {
+  text-decoration: underline;
+}

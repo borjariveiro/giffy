@@ -4,6 +4,7 @@ import Gif from 'components/Gif'
 import useSingleGif from 'hooks/useSingleGif'
 import Spinner from 'components/Spinner'
 import { Helmet } from 'react-helmet'
+import SearchForm from 'components/SearchForm'
 
 export default function Detail({ params }) {
   const { gif, isLoading, isError } = useSingleGif({ id: params.id })
@@ -27,8 +28,13 @@ export default function Detail({ params }) {
     <Helmet>
       <title>{title} | Giffy</title>
     </Helmet>
-    <h3 className="App-title">{gif.title}</h3>
-    <Gif {...gif} />
+    <div className="App-searchFormContainer">
+      <SearchForm />
+    </div>
+    <div className="App-wrapper">
+      <h3 className="App-title">{gif.title}</h3>
+      <Gif {...gif} />
+    </div>
 
   </>
 }

@@ -3,13 +3,12 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px 16px;
   align-items: center;
   grid-template-rows: masonry;
+  gap: 10px 16px;
 }
 
 .ListOfGifs-item{
-  background-color: #eee;
   display: inline-block;
-  width: 100%;
+    /* width: 100%; */
 }

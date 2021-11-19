@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useRoute } from "wouter";
 import useUser from "hooks/useUser";
-import './index.css'
+import './Header.css'
 
 export default function Header() {
   const { isLogged, logout } = useUser()
@@ -32,8 +32,10 @@ export default function Header() {
 
 
   return (
-    <header className="gf-header">
-      {content}
+    <header className="Header">
+      <div className="Header-content">
+        {content}
+      </div>
     </header>
   )
 }
