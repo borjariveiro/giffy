@@ -1,6 +1,8 @@
 import React from "react";
 import register from 'services/register'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Link } from "wouter";
+
 
 const initialValues = { username: '', password: '' }
 
@@ -35,23 +37,32 @@ export default function Register() {
     >
       {
         ({ isSubmitting, errors }) =>
-          <Form className="form">
-            <Field
-              className={errors.username ? 'error' : ''}
-              name="username"
-              placeholder="Username"
-            />
-            <ErrorMessage className="form-error" name='username' component='small' />
-            <Field
-              className={errors.password ? 'error' : ''}
-              type="password"
-              name="password"
-              placeholder="Password"
-            />
-            <ErrorMessage className="form-error" name='password' component='small' />
+          <>
+            <div className="Form-sign-container">
+              <Form className="Form-sign">
+                <label htmlFor="username">Username</label>
+                <Field
+                  className={errors.username ? 'error' : ''}
+                  name="username"
+                  placeholder="Username"
+                />
+                <ErrorMessage className="form-error" name='username' component='small' />
+                <label htmlFor="password">Password</label>
+                <Field
+                  className={errors.password ? 'error' : ''}
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <ErrorMessage className="form-error" name='password' component='small' />
 
-            <button type="submit" className="button" disabled={isSubmitting}>Register</button>
-          </Form>
+                <button type="submit" className="button" disabled={isSubmitting}>Register</button>
+              </Form>
+            </div>
+            <div className="Form-linkSingUp">
+              <span>Have an account? <Link href="/login">Sign in</Link></span>
+            </div>
+          </>
       }
     </Formik>
   </>

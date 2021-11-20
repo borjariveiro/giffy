@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import useUser from "hooks/useUser";
-import './Login.css'
+import './Form-sign.css'
 
 
 export default function Login({ onLogin }) {
@@ -28,28 +28,34 @@ export default function Login({ onLogin }) {
     <>
       {isLoginLoading && <strong>Checking credentials ...</strong>}
       {!isLoginLoading &&
-        <form className="Form-login-register" onSubmit={handleSubmit}>
-          <label>
-            Username
-            <input
-              placeholder="Username"
-              onChange={e => setUsername(e.target.value)}
-              value={username}
-            />
-          </label>
-          <label>
-            Password
-            <input
-              type="password"
-              onChange={e => setPassword(e.target.value)}
-              value={password}
-              placeholder="Password"
-            />
-          </label>
+        <>
+          <div className="Form-sign-container">
+            <form className="Form-sign" onSubmit={handleSubmit}>
+              <label>
+                Username
+                <input
+                  onChange={e => setUsername(e.target.value)}
+                  value={username}
+                />
+              </label>
+              <label>
+                Password
+                <input
+                  type="password"
+                  onChange={e => setPassword(e.target.value)}
+                  value={password}
+                />
+              </label>
 
-          <button className="button">Login</button>
-        </form>
+              <button className="button">Sign in</button>
+            </form>
+          </div>
+          <div className="Form-linkSingUp">
+            <span>Don't have an account? <Link href="/register">Create one</Link></span>
+          </div>
+        </>
       }
+
       {
         hasLoginError && <strong>Credentials are invalid</strong>
       }

@@ -58,6 +58,16 @@
   text-align: center;
 }
 
+.App-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-login h3 {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 55rem){
   .App-main{
     flex-direction: initial;

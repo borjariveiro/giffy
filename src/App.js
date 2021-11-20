@@ -9,14 +9,13 @@ import ErrorPage from 'pages/ErrorPage'
 import Register from 'pages/Register'
 import Header from 'components/Header'
 
-
 import { UserContextProvider } from 'context/UserContext'
 import { GifsContextProvider } from 'context/GifsContext'
 
-import 'App.css'
 import logo from 'giffy_logo.png'
+import 'App.css'
 
-//! Login 52:40
+// ! Quitar fav, styles de Header y de la modal
 
 export default function App() {
   return (

@@ -15,14 +15,14 @@ export default function Header() {
   const rederLoginButtons = ({ isLogged }) => {
     return isLogged
       ? <Link href='#' onClick={handleClick}>
-        Logout
+        Sing out
       </Link>
       : <>
         <Link to='/login'>
-          Login
+          Sign in
         </Link>
         <Link to='/register'>
-          Register
+          Sing up
         </Link>
       </>
   }

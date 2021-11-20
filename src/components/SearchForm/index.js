@@ -25,7 +25,7 @@ function SearchForm({ initialKeyword = '' }) {
         type="text"
         value={keyword}
       />
-      <button className="button">Buscar</button>
+      <button className="button">Search</button>
     </form>
 
   )

@@ -1,0 +1,74 @@
+.Form-sign-container{
+  border: 1px solid var(--theme-border);
+  border-radius: 5px;
+  width:325px;
+  height: 250px;
+  padding: 1.4rem 1.1rem;
+}
+
+.Form-sign {
+  width: 100%;
+  max-width: 320px;
+}
+
+.Form-sign label {
+  display: block;
+  color: var(--theme-title);
+  font-size: 16px;
+}
+
+.Form-sign input {
+  background: var(--theme-background);
+  border: 1px solid var(--theme-border);
+  color: var(--theme-title);
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  line-height: 2;
+  font-size: 16px;
+  padding: 0 8px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.Form-sign input:focus {
+  border-color: var(--theme-hover);
+  outline: none;
+
+}
+
+.Form-sign button {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Form-linkSingUp{
+  font-size: 15px;
+  border: 1px solid var(--theme-border);
+  border-radius: 5px;
+  width:325px;
+  height: 60px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Form-linkSingUp a {
+  color: var(--theme-button);
+}
+
+.Form-linkSingUp a:hover {
+  color: var(--theme-hover);
+}
+
+.Form-sign input.error {
+  border: 1px solid red;
+}
+
+.form-error{
+  color: red;
+  font-size: 12px;
+  margin-top: -4px;
+  display: block;
+}
