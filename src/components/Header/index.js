@@ -14,14 +14,14 @@ export default function Header() {
 
   const rederLoginButtons = ({ isLogged }) => {
     return isLogged
-      ? <Link href='#' onClick={handleClick}>
+      ? <Link href='#' onClick={handleClick} className="Header-signOut">
         Sing out
       </Link>
       : <>
-        <Link to='/login'>
+        <Link to='/login' className="Header-signIn">
           Sign in
         </Link>
-        <Link to='/register'>
+        <Link to='/register' className="Header-signUp">
           Sing up
         </Link>
       </>
@@ -29,6 +29,7 @@ export default function Header() {
 
   const content = match
     ? null : rederLoginButtons({ isLogged })
+  console.log(content)
 
 
   return (

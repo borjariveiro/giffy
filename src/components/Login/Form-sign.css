@@ -40,6 +40,8 @@
 .Form-sign button {
   width: 100%;
   border-radius: 5px;
+  background-color: var(--theme-button);
+  color: var(--theme-button--text);
 }
 
 .Form-linkSingUp{

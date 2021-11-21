@@ -4,9 +4,9 @@ import './Modal.css'
 
 function Modal({ children, onClose }) {
 
-  return <div className="modal">
-    <div className="modal-content">
-      <button className="button" onClick={onClose}>❎</button>
+  return <div className="Modal">
+    <div className="Modal-content">
+      <button className="Modal-button" onClick={onClose}>❌</button>
       {children}
     </div>
   </div>

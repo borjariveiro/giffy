@@ -9,16 +9,40 @@
   padding: .5em;
   width: 100%;
   max-width: var(--app-maxWith);
+
 }
 
 .Header a {
-  color: var(--theme-title);
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-left: 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-left: 5px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
 }
 
-.Header a:hover {
-  text-decoration: underline;
+.Header-signIn{
+  color: var(--theme-button);
+}
+
+.Header-signIn:hover{
+  background-color: var(--theme-hover2);
+}
+
+.Header-signUp{
+  color: var(--theme-title);
+  background-color: var(--theme-button);
+}
+
+.Header-signUp:hover {
+  background-color: var(--theme-hover);
+}
+
+.Header-signOut{
+  color: var(--theme-title);
+  background-color: var(--theme-button);
+
 }
