@@ -64,5 +64,5 @@ Project done to learn React through the course of [Midudev](https://www.youtube.
 
 ## Author
 
-- Linkedin - [borjariveiro](linkedin.com/in/borjariveiro)
-- GitHub - [Borja-Riveiro](https://github.com/Borja-Riveiro)
+- Linkedin - [borjariveiro](https://www.linkedin.com/in/borjariveiro/)
+- GitHub - [Borja-Riveiro](https://github.com/borjariveiro)
