@@ -8,18 +8,24 @@ Project done to learn React through the course of [Midudev](https://www.youtube.
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Link](#link)
+    - [Author](#author)
     - [The requirements](#the-requirements)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I have learned](#what-i-have-learned)
     - [Useful resources](#useful-resources)
-  - [Author](#author)
+  
 
 ## Overview
 
 ### Link
 
 - Solution URL: [giffy-borjariveiro](https://giffy-borjariveiro.vercel.app/)
+
+### Author
+
+- Linkedin - [borjariveiro](https://www.linkedin.com/in/borjariveiro/)
+- GitHub - [Borja-Riveiro](https://github.com/borjariveiro)
 
 ### The requirements
 
@@ -61,8 +67,3 @@ Project done to learn React through the course of [Midudev](https://www.youtube.
 - [JavaScript](https://es.javascript.info/)
 - [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS-TRICKS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-
-## Author
-
-- Linkedin - [borjariveiro](https://www.linkedin.com/in/borjariveiro/)
-- GitHub - [Borja-Riveiro](https://github.com/borjariveiro)
